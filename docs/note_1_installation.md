@@ -41,3 +41,19 @@ Finally, for generating projects:
 ```sh
 cargo install cargo-generate
 ```
+
+Next on the list for macOS specifically:
+
+```sh
+brew install arm-none-eabi-gdb openocd qemu
+```
+
+Onchip debugger sounds cool, and qemu is an emulator.
+
+# Testing a board connection
+
+I don't have the board yet, but let's write this here for reference:
+
+```sh
+openocd -f interface/stlink.cfg -f target/stm32f3x.cfg
+```
