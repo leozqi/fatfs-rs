@@ -15,7 +15,13 @@ cargo generate --git https://github.com/rust-embedded/cortex-m-quickstart
 # Done! New project created ...
 ```
 
-Fill in the placeholders in the Cargo.toml file
+- `.vscode` directory with README file, which contains a lot of nice tools for debugging. I wonder if I can replicate these using shell scripts.
+Let's get `git` configured quickly:
+
+```sh
+git remote add origin https://github.com/leozqi/fatfs-rs.git
+git pull origin trunk
+```
 
 ## Important project bits
 
